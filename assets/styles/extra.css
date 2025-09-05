@@ -1,0 +1,27 @@
+/* Import fonts (fast, free) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Roboto:wght@300;400;500&display=swap');
+
+:root {
+  --md-text-font: "Roboto", system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif;
+  --md-code-font: Menlo, ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+}
+
+.md-typeset h1, .md-typeset h2, .md-typeset h3 {
+  font-family: "Inter", var(--md-text-font);
+  letter-spacing: 0.2px;
+}
+
+:root [data-md-color-scheme="slate"] {
+  /* toned black + dark grey */
+  --md-default-bg-color: #0d0f12;
+  --md-primary-fg-color: #eaeaea;     /* ghostly white text */
+  --md-default-fg-color: #e6e6e6;
+}
+
+.md-typeset a { text-decoration: none; border-bottom: 1px solid rgba(255,255,255,.15); }
+.md-typeset a:hover { border-bottom-color: rgba(255,255,255,.35); }
+
+/* De-saturate blue/green accents toward grey */
+.md-nav__link--active, .md-typeset .admonition-title {
+  filter: grayscale(100%);
+}

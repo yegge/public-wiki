@@ -1,0 +1,48 @@
+site_name: Yegge Public Wiki
+site_description: Public documentation and knowledge base
+site_url: https://yegge.github.io/public-wiki/
+repo_url: https://github.com/yegge/public-wiki
+repo_name: yegge/public-wiki
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.expand
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+  palette:
+    - scheme: slate        # default to dark
+      primary: black
+      accent: grey
+  font:
+    text: Roboto
+    code: Menlo
+  logo: null
+  favicon: null
+extra_css:
+  - styles/extra.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+nav:
+  - Home: index.md
+  # Add more like:
+  # - Guide:
+  #     - Getting Started: guide/getting-started.md
+  #     - FAQ: guide/faq.md
+
+plugins:
+  - search
