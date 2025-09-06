@@ -40,7 +40,10 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Music: 
-      - Tracks: music/tracks.md     
+      - Tracks: music/tracks.md
+  - Audio Production:
+      - Stages of Production: Production/SOP.md
+      - Techniques: Audio/production/techniques.md
 
   # Add more like:
   # - Guide:
@@ -49,3 +52,8 @@ nav:
 
 plugins:
   - search
+  - rss:
+        match_path: "blog/posts/.*"
+        date_from_meta:
+          as_creation: date.created
+          as_update: date.updated
