@@ -39,6 +39,9 @@ markdown_extensions:
 
 nav:
   - Home: index.md
+  - Music: 
+      - Tracks: music/tracks.md
+
   # Add more like:
   # - Guide:
   #     - Getting Started: guide/getting-started.md
