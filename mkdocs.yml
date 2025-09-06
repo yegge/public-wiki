@@ -40,7 +40,7 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Music: 
-      - Tracks: music/tracks.md
+      - Tracks: music/tracks.md     
 
   # Add more like:
   # - Guide:
