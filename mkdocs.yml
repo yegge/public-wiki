@@ -41,9 +41,6 @@ nav:
   - Home: index.md
   - Music: 
       - Tracks: music/tracks.md
-  - Audio Production:
-      - Stages of Production: Production/SOP.md
-      - Techniques: Audio/production/techniques.md
 
   # Add more like:
   # - Guide:
